@@ -42,6 +42,7 @@ Demistifying Concept:
 4) Comprendere l'uso delle seguenti librerie:
    <iostream>, <sstream>, <fstream>, <string>, <sys/types.h>, <stdio.h>, <stlib.h> 
 
+5) Comprendere l'uso di extern
 
 
 To Remember:
