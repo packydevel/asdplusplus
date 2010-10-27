@@ -1,0 +1,12 @@
+TODO:
+
+1) Progettare le implementazioni delle strutture dati in modo tale (se possibile)
+   da avere una interfaccia comune, ossia lo stesso header da importare piuttosto
+   che uno diverso per ogni implementazione.
+   Esempio: Lista usando puntatori, Lista usando Cursori.
+   
+2) Progettare le strutture dati con visione OO cercando di astrarre il più possibile
+
+3) Usare i Namespace di C++ in modo simile a come si userebbero i package in Java
+
+4) Usare il Template Metaprogramming ove possibile
