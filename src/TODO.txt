@@ -10,3 +10,50 @@ TODO:
 3) Usare i Namespace di C++ in modo simile a come si userebbero i package in Java
 
 4) Usare il Template Metaprogramming ove possibile
+
+5) Prevedere l'uso di MACRO
+
+6) Usare la tecnica del include guard
+
+7) Usare i Template per realizzare strutture generica (vedere di Pasquale Minervini)
+
+8) Usare le funzioni const (vedere Carmine Valente)
+
+9) Valutare se conveniente la realizzazione con file unico e con file divisi (vedere Carmine Valente)
+
+10) Usare main.h comune (vedere Pasquale Minervini)
+
+11) Usare il passaggio di oggetti per puntatori
+
+12) Implementare funzioni di servizio (vedere Nicux)
+
+13) Usare le eccezioni
+
+
+
+Demistifying Concept:
+
+1) Differenza tra const e define
+
+2) Uso di const per i puntatori
+
+3) Uso di const nelle funzioni
+
+4) Comprendere l'uso delle seguenti librerie:
+   <iostream>, <sstream>, <fstream>, <string>, <sys/types.h>, <stdio.h>, <stlib.h> 
+
+
+
+To Remember:
+
+2) In C++ il passaggio di parametri è sempre by value
+
+3) void f(int* p); //Anche in questo caso il passaggio è per valore sebbene si sia passato un puntatore
+
+4) voif f(int& p); //In questo modo si realizza il passaggio di parametri by reference
+
+5) Un puntatore void* non può essere dereferenziato a meno di casting e non si può avere un passagio di parametri by reference attraverso void&
+
+6) int x; int& y = x; //y è esattamente un riferimento ad x ossia stessa area di memoria, stesso contenuto di x ma y non è un puntatore
+
+7) int* ipa, ipb, ipc; //In questo caso solo ipa è un puntatore, ipb e ipc sono semplicemente variabili di tipo int
