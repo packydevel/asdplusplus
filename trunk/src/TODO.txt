@@ -77,3 +77,5 @@ To Remember:
     
 11) Quando si dichiara una variabile reference essa va contestualmente dichiarata e definita. Inoltre una volta definita una variabile
     reference non può essere ridefinita nel senso che non può referenziare una variabile diversa da quella referenziata in fase di dichiarazione
+
+12) Il compilatore C++ non esegue alcun controllo sugli indici usati per accedere ad un array     
