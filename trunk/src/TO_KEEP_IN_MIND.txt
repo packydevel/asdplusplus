@@ -59,3 +59,46 @@ To Keep in Mind:
     ...
     delete [] p;
     p=0;
+    
+18) Un puntatore a costante può contenere l'indirizzo di memoria di un oggetto che sia const o no, ciò non costituisce un problema. Tuttavia
+    il puntatore a costante non potrà modificare il contenuto puntato tramite dereferenziazione e ciò in virtù del fatto che appunto è stato
+    dichiarato come puntatore a costante e dunque assume che qualunque cosa stia puntando sia una costante. Esempio:
+    
+    int x = 0;
+	const int y = 10;
+
+	//Defining a Pointer to Constant
+	const int* p = 0;
+
+	p = &x; //OK
+	//*p = 100; //ERROR!!!
+
+	p = &y; //OK
+	//*p = 100; //ERROR!!!
+        
+19) E' possibile definire un puntatore costante nel senso che può puntare solo ad un indirizzo di memoria in tutta la sua vita.
+    Tale puntatore però può modificare tramite dereferenziazione il contenuto della variabile puntata. Esempio:
+
+	int x = 0;
+	int y = 10;
+	
+	//Defining Constant Pointer
+	int* const p = &x;
+
+	p = &y; //ERROR!!!
+	*p = 100; //OK
+	
+20) E' possibile definire contemporaneamente un puntatore costante e che punti ad una costante. In altri termini si tratta della
+    combinazione dei precedenti punti 18) e 19). Tale puntatore una volta dichiarato e definito non potrà puntare ad altro indirizzo
+    di memoria e non potrà modificare in alcuno modo tramite dereferenziazione il contenuto della variabile puntata. Esempio:
+    
+	int x = 0;
+	int y = 10;
+	
+	//Defining a Const Pointer pointing to Constant
+	const int* const p = &x;
+
+	//p = &y; //ERROR!!!
+	//*p = 100; //ERROR!!!
+	    	
+	
