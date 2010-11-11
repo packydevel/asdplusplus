@@ -1,36 +1,17 @@
 To Keep in Mind:
 ----------------
 
-2) In C++ il passaggio di parametri è sempre by value
-
-3) void f(int* p); //Anche in questo caso il passaggio è per valore sebbene si sia passato un puntatore
-
-4) voif f(int& p); //In questo modo si realizza il passaggio di parametri by reference
-
 5) Un puntatore void* non può essere dereferenziato a meno di casting e non si può avere un passagio di parametri by reference attraverso void&
-
-6) int x; int& y = x; //y è esattamente un riferimento ad x ossia stessa area di memoria, stesso contenuto di x ma y non è un puntatore
-
-7) int* ipa, ipb, ipc; //In questo caso solo ipa è un puntatore, ipb e ipc sono semplicemente variabili di tipo int
 
 8) In C++ esiste il Global Scope. Per accedere ad una variabile x in global scope che sia offuscata si usa ::x
 
 9) E' possibile definire e innestare i namespace. Inoltre è possibile definire namespace alias che si riferiscano ad altri namespace
-
-10) Quando si dichiara un puntatore p di uncerto tipo e si esegue una operazione di ++p o --p in realtà il puntatore non punta
-    ad un indirizzo di memoria adiacente di una unità in più o in meno rispetto all'indirizzo di memoria puntato attualmente.
-    L'operazione di incremento o decremento è pari ad un numero di byte equivalenti a quelli allocati per il tipo del puntatore.
-    Ad esempio se si definisce int* p e si esegue ++p o --p allora p punterà ad un indirizzo di memoria rispettivamente avanti o
-    indietro di 4 byte rispetto a quello attuale (su una macchina a 64 bit)
     
-11) Quando si dichiara una variabile reference essa va contestualmente dichiarata e definita. Inoltre una volta definita una variabile
-    reference non può essere ridefinita nel senso che non può referenziare una variabile diversa da quella referenziata in fase di dichiarazione
-
 12) Il compilatore C++ non esegue alcun controllo sugli indici usati per accedere ad un array
 
 13) In C++ esiste il tipo builtin string
 
-14) All'interno di una classe C++ non + necessario usare il forward declaration tra membri. Il compilatore sarà in grado di individuare attributi
+14) All'interno di una classe C++ non è necessario usare il forward declaration tra membri. Il compilatore sarà in grado di individuare attributi
     o metodi definiti in un punto successivo rispetto a quello che attualmente il compilatore sta analizzando.
     
 15) Un Costruttore che inizializza degli attributi può usare in alternativa all'operazione di assegnamento, una initialization list
@@ -59,46 +40,5 @@ To Keep in Mind:
     ...
     delete [] p;
     p=0;
-    
-18) Un puntatore a costante può contenere l'indirizzo di memoria di un oggetto che sia const o no, ciò non costituisce un problema. Tuttavia
-    il puntatore a costante non potrà modificare il contenuto puntato tramite dereferenziazione e ciò in virtù del fatto che appunto è stato
-    dichiarato come puntatore a costante e dunque assume che qualunque cosa stia puntando sia una costante. Esempio:
-    
-    int x = 0;
-	const int y = 10;
-
-	//Defining a Pointer to Constant
-	const int* p = 0;
-
-	p = &x; //OK
-	//*p = 100; //ERROR!!!
-
-	p = &y; //OK
-	//*p = 100; //ERROR!!!
-        
-19) E' possibile definire un puntatore costante nel senso che può puntare solo ad un indirizzo di memoria in tutta la sua vita.
-    Tale puntatore però può modificare tramite dereferenziazione il contenuto della variabile puntata. Esempio:
-
-	int x = 0;
-	int y = 10;
-	
-	//Defining Constant Pointer
-	int* const p = &x;
-
-	p = &y; //ERROR!!!
-	*p = 100; //OK
-	
-20) E' possibile definire contemporaneamente un puntatore costante e che punti ad una costante. In altri termini si tratta della
-    combinazione dei precedenti punti 18) e 19). Tale puntatore una volta dichiarato e definito non potrà puntare ad altro indirizzo
-    di memoria e non potrà modificare in alcuno modo tramite dereferenziazione il contenuto della variabile puntata. Esempio:
-    
-	int x = 0;
-	int y = 10;
-	
-	//Defining a Const Pointer pointing to Constant
-	const int* const p = &x;
-
-	//p = &y; //ERROR!!!
-	//*p = 100; //ERROR!!!
 	    	
 	
