@@ -1,11 +1,7 @@
 Concept Demistifying:
 ---------------------
 
-1) Differenza tra const e define
-
-2) Uso di const per i puntatori
-
-3) Uso di const nelle funzioni
+1) Uso di volatile
 
 4) Comprendere l'uso delle seguenti librerie:
    <iostream>, <sstream>, <fstream>, <string>, <sys/types.h>, <stdio.h>, <stlib.h> 
@@ -15,14 +11,3 @@ Concept Demistifying:
 6) E' possibile definire una variabile double come "double x(2.0)" usando il costruttore.
    Ma cosa significa esattamente fare questo e qual è la differenza rispetto alla tipica
    definizione "double x = 2.0"
-   
-7) Differenza tra reference e pointer
-
-8) Che significato ha usare const nel seguente modo?:
-
-   int Person::getAge() const
-   {
-       return age;
-   }
-   
-9) Chiarire il concetto di Copy Constructor   
