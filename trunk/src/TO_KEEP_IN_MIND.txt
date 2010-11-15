@@ -40,5 +40,7 @@ To Keep in Mind:
     ...
     delete [] p;
     p=0;
-	    	
+    
+18) In C++ struct e class sono esattamente identiche in tutto tranne che in un unico aspetto: il modificatore di default dei membri di una 
+	struct è public mentre il modificatore di default dei membri di una class è private.    	
 	
