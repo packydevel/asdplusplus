@@ -29,4 +29,6 @@ TODO:
 
 13) Usare le eccezioni
 
-14) Valutare l'uso dell'Heap per allocare oggetti.
+14) Valutare l'uso dell'Heap per allocare oggetti
+
+15) Usare le asserzioni per rappresentare le pre e post condizioni
