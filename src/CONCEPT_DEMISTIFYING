@@ -6,8 +6,6 @@ Concept Demistifying:
 4) Comprendere l'uso delle seguenti librerie:
    <iostream>, <sstream>, <fstream>, <string>, <sys/types.h>, <stdio.h>, <stlib.h> 
 
-5) Comprendere l'uso di extern
-
 6) E' possibile definire una variabile double come "double x(2.0)" usando il costruttore.
    Ma cosa significa esattamente fare questo e qual è la differenza rispetto alla tipica
    definizione "double x = 2.0"

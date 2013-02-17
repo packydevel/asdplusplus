@@ -25,7 +25,7 @@ To Keep in Mind:
     
 17) In C++ (C) variabili allocate con l'operatore new (malloc) devono essere esplicitamente deallocate con l'operatore delete (free)
     E' importante ricordare che la deallocazione libera spazio nell'Heap ma il riferimento all'indirizzo di memoria restituito
-    inizialmente dall'operatore new non viene eliminato. Ciò significa che sarebbe per assurdo eseguire nuovamente una delete
+    inizialmente dall'operatore new non viene eliminato. Ciò significa che sarebbe possibile per assurdo eseguire nuovamente una delete
     causando un comportamento non predicibile a priori. Pertanto conviene immediatamente assegnare il puntatore al valore 0 dopo avere
     eseguito la delete. Esempio:
     
