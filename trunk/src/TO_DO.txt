@@ -32,3 +32,5 @@ TODO:
 14) Valutare l'uso dell'Heap per allocare oggetti
 
 15) Usare le asserzioni per rappresentare le pre e post condizioni
+
+16) Usare le asserzioni
