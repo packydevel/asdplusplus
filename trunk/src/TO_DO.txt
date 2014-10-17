@@ -11,15 +11,15 @@ TODO:
 
 4) Usare il Template Metaprogramming ove possibile
 
-5) Prevedere l'uso di MACRO
+5) Limitare l'uso di MACRO
 
-6) Usare la tecnica del include guard
+6) Usare la tecnica degli include guards
 
 7) Usare i Template per realizzare strutture generica (vedere di Pasquale Minervini)
 
 8) Usare le funzioni const (vedere Carmine Valente)
 
-9) Valutare se conveniente la realizzazione con file unico e con file divisi (vedere Carmine Valente)
+9) Organizzare i sorgenti con file distinti (vedere Carmine Valente)
 
 10) Usare main.h comune (vedere Pasquale Minervini)
 
@@ -34,3 +34,5 @@ TODO:
 15) Usare le asserzioni per rappresentare le pre e post condizioni
 
 16) Usare le asserzioni
+
+17) 
